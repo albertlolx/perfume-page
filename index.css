@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    font-size: 11px; text-align: center; 
+}
+
+footer a {
+    color: hsl(228, 45%, 44%); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 90vh;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+    border-radius: 10px;
+}
+
+.main-img {
+    height: 32.5vh;
+    width: 100%;
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+main {
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-container {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.purchase-button {
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+}
+
+.product-type {
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+}
+
+.product-name {
+    margin: 15px auto;
+}
+
+.product-description {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.old-price {
+    font-size: 1.25rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration:line-through;
+    font-weight: 500;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+}
+
+button {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+}
+
+.purchase-button svg {
+    margin-right: 12.5px;
+}
+
+footer {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 660px) {
+
+    .container {
+        flex-direction: row;
+    }
+
+    .main-img {
+        height: 100%;
+        width: 100%;
+        background-image: url("./images/image-product-desktop.jpg");
+        background-position: center center;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    main {
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px 0;
+    }
+}
